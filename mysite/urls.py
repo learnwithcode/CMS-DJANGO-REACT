@@ -25,13 +25,16 @@ from rest_framework.documentation import include_docs_urls
 schema_view = get_swagger_view(title='API DOCS')
 
 urlpatterns = [
+    path('grappelli/', include('grappelli.urls')), # grappelli URLS
     path('admin/', admin.site.urls),
     path('api-docs/', schema_view),
     path('docs/', include_docs_urls(title='API DOCS')),
     #rest auth
-    path('rest-auth/', include('rest_auth.urls')),
+    # path('rest-auth/', include('rest_auth.urls')),
     #all auth
     path('accounts/', include('allauth.urls')),
+    #logix101
+    # path('logix/api/', include('logix101.urls', namespace='logix101')),
     #DRF
     path('api-auth/', include('rest_framework.urls')),
     #React urls

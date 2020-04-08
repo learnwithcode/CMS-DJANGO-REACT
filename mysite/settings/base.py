@@ -25,12 +25,13 @@ SECRET_KEY = '-s_1_t6&!uc3s#aefs75ane$ffcx)^0raqz#((k4x^!gja$dv8'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.herokuapp.com']
+ALLOWED_HOSTS = ['.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'grappelli',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -50,6 +51,9 @@ INSTALLED_APPS = [
 
     #api docs
     'rest_framework_swagger', # swagger
+
+    #local apps
+    'logix101'
     
 ]
 
@@ -184,3 +188,7 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
+
+
+#Grappelli ===============================================================================4
+GRAPPELLI_ADMIN_TITLE = '101logix'
