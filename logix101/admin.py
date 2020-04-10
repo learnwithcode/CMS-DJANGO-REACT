@@ -35,9 +35,9 @@ class RequestDemoAdmin(admin.ModelAdmin):
 
 
 admin.site.unregister(Group) 
-admin.site.unregister(Contact)   
-admin.site.unregister(Email)
-admin.site.unregister(RequestDemo)
+# admin.site.unregister(Contact)   
+# admin.site.unregister(Email)
+# admin.site.unregister(RequestDemo)
 admin.site.unregister(Site)
 admin.site.unregister(Token)
 admin.site.unregister(EmailAddress)
