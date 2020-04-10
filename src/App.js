@@ -1,20 +1,17 @@
 import React from 'react';
-
+import { BrowserRouter } from 'react-router-dom';
 
 //local import here.
 import './static/css/style.css'
-import RequestForm from './Container/logix/RequestForm';
-import ContactForm from './Container/logix/ContactForm';
-import EmailForm from './Container/logix/EmailForm';
+// import Navigation from './Navigation';
+
 
 function App() {
   return (
-    <React.Fragment>
-      <h1>Hello world</h1>
-      {/* <RequestForm/>
-      <ContactForm/>
-      <EmailForm/> */}
-    </React.Fragment>
+    <BrowserRouter>
+      {/* <Navigation/> */}
+      <h1>Hello World</h1>
+    </BrowserRouter>  
   );
 }
 
