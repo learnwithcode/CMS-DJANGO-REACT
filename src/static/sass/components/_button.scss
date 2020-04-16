@@ -1,0 +1,45 @@
+.btn {
+    &:link,
+    &:visited {
+        text-decoration: none;
+        
+        box-shadow: .5rem .5rem 2rem rgba(rgba($color-black, .4), 0.4);
+        border-radius: 3.8rem;
+        padding: 1rem 1.8rem;
+        font-weight: 600;
+        line-height: 2.2rem;
+
+        transition: all .2s;
+        position: relative;
+    }
+
+    &:hover {
+        transform: translateY(-.8rem);
+        box-shadow: 0 1rem 2rem rgba($color-black, .2);
+    }
+
+    &:active {
+        transform: translateY(-.1rem);
+        box-shadow: 0 .5rem 1rem rgba($color-black, .2);
+    }
+
+    &--white {
+        background: $color-white;
+        color: $color-primary;
+    }
+
+    &--blue {
+        background: $color-primary;
+        color: $color-white;
+    }
+
+    &-arrow {
+        position: relative;
+        left: 1.3rem;
+        padding: .7rem 2rem;
+        background:$color-secondary;
+        border-radius: 3.8rem;
+        color: $color-white;
+        
+    }
+}

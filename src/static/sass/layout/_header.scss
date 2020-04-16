@@ -1,0 +1,22 @@
+.header {
+    background-color: $color-primary;
+    height: 58.3rem;
+
+    position: relative;
+
+    &__text-box {
+        width: 49rem;
+        position: absolute;
+        top: 24%;
+        left: 15%;
+    }
+    
+    
+    &__hero {
+        width: 55%;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+}

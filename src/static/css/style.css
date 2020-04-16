@@ -12,7 +12,7 @@
 - big-desktop
 - 4k
 */
-@import url("https://fonts.googleapis.com/css?family=Karla:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap");
 *,
 *::after,
 *::before {
@@ -39,7 +39,101 @@ html {
       font-size: 43%; } }
 
 body {
-  font-family: 'Karla', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 1.7; }
+
+.heading-primary {
+  font-weight: 600;
+  font-size: 4.6rem;
+  line-height: 6.3rem;
+  text-transform: capitalize;
+  margin-bottom: 4rem;
+  color: #ffffff; }
+
+.para-white {
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  text-transform: lowercase;
+  margin-bottom: 6rem;
+  color: #ffffff; }
+
+.btn:link, .btn:visited {
+  text-decoration: none;
+  box-shadow: 0.5rem 0.5rem 2rem rgba(0, 0, 0, 0.4);
+  border-radius: 3.8rem;
+  padding: 1rem 1.8rem;
+  font-weight: 600;
+  line-height: 2.2rem;
+  transition: all .2s;
+  position: relative; }
+
+.btn:hover {
+  transform: translateY(-0.8rem);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+
+.btn:active {
+  transform: translateY(-0.1rem);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+
+.btn--white {
+  background: #ffffff;
+  color: #3F00C9; }
+
+.btn--blue {
+  background: #3F00C9;
+  color: #ffffff; }
+
+.btn-arrow {
+  position: relative;
+  left: 1.3rem;
+  padding: .7rem 2rem;
+  background: #5200FF;
+  border-radius: 3.8rem;
+  color: #ffffff; }
+
+.header {
+  background-color: #3F00C9;
+  height: 58.3rem;
+  position: relative; }
+  .header__text-box {
+    width: 49rem;
+    position: absolute;
+    top: 24%;
+    left: 15%; }
+  .header__hero {
+    width: 55%;
+    position: absolute;
+    top: 0;
+    right: 0; }
+
+.nav {
+  background-color: #3F00C9;
+  height: 10rem;
+  box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 20rem; }
+  .nav__list {
+    list-style: none; }
+  .nav__item {
+    display: inline-block;
+    padding: 0 2rem; }
+    .nav__item:not(:last-child) {
+      margin-right: 2rem; }
+    .nav__item--btn {
+      background-color: black;
+      padding: 1rem 2rem;
+      border-radius: .5rem; }
+  .nav__link:link, .nav__link:visited {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    text-transform: capitalize;
+    transition: all .2s; }
+  .nav__link:hover, .nav__link:active {
+    color: #FEB409; }
