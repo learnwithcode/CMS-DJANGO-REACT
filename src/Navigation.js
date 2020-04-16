@@ -3,7 +3,7 @@ import { Switch, Route, Link } from 'react-router-dom';
 import Wrapper from './Container/HOC/Wrapper';
 
 //local import here;
-import Landing from './component/pages/landing';
+import Home from './component/pages/home';
 // import RequestForm from './Container/logix/RequestForm';
 // import ContactForm from './Container/logix/ContactForm';
 // import EmailForm from './Container/logix/EmailForm';
@@ -26,7 +26,7 @@ function Navigation() {
 			</nav>
 
         <Switch>
-            <Route path="/" exact component={Wrapper(Landing)}/>  
+            <Route path="/" exact component={Wrapper(Home)}/>  
             {/* <Route path="/contact/" exact component={Wrapper(ContactForm)}/> 
             <Route path="/demo/" exact component={Wrapper(RequestForm)}/>  */}
         </Switch>

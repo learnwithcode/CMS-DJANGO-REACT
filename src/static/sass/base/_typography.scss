@@ -13,17 +13,71 @@ body {
     font-size: 4.6rem;
     line-height: 6.3rem;
     text-transform: capitalize;
-    margin-bottom: 4rem;
 
     color: $color-white;
 }
 
-.para-white {
+.heading-secondary {
+    font-weight: 600;
+    font-size: 3.6rem;
+    line-height: 4.9rem;
+
+    color: $text-col-prime;
+}
+
+.heading-tertiary {
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 2rem;
+
+    color: $text-col-blue;
+}
+
+.title-text {
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    text-transform: capitalize;
+
+    color: $text-col-prime;
+}
+
+.title-text-grey {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    text-transform: capitalize;
+
+    color: $text-col-grey;
+}
+
+.title-bold-blue{
+        display: inline-block;
+        font-weight: 700;
+        font-size: 2.1rem;
+        line-height: 2.9rem;
+        text-transform: lowercase;
+
+        color: #3400A4;
+}
+
+.para--white{
     font-size: 1.8rem;
     line-height: 2.5rem;
     text-transform: lowercase;
-    margin-bottom: 6rem;
 
-    color: $color-white;
+    margin-bottom: 6rem;
+    color: $color-white;    
 }
 
+
+.para--grey {
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    text-transform: lowercase;
+
+    margin-bottom: 6rem;
+    color: $text-col-grey;
+}
