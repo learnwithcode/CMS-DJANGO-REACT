@@ -1,20 +1,17 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+
 
 //local import here
-import Button from '../button'
+import Button from '../button';
+import Header from '../layout/header';
+import ContactCTA from '../layout/contactCTA';
+import Footer from '../layout/footer';
+
 
 function Home() {
     return(
         <React.Fragment>
-        <header className='header'>
-            <div className='header__text-box'>
-                <h1 className='heading-primary u-mar-bot-lar'>One stop solution for all your IT needs....</h1>
-                <p className='para--white'>...simplifying business...</p>
-                <Button color='btn--white'>Let's talk</Button>
-            </div>
-            <img src={require('../../static/images/heroimg.png')} alt='Logo' className='header__hero'/>
-        </header>
+            <Header/>
 
         <main>
             <section  className='section-industry'>
@@ -158,69 +155,11 @@ function Home() {
 
             </section>
 
-            <section className='section-contact'>
-                <div className='container'>
-                    <div className='container__grey-box'>
-                        <div className='container__grey-box--left'>
-                            <h3 className='heading-tertiary u-mar-bot-small'>Contact us</h3>    
-                            <h2 className='heading-secondary u-mar-bot-med'>Start your project with 101logix</h2>
-
-                            <Button color='btn--blue'>Let's talk</Button>
-                        </div>
-
-                        <div className='container__grey-box--right'>
-                        <img src={require('../../static/images/contact_img.png')} alt='Logo' className='container__grey-box--img'/>
-
-                        </div>
-                    </div>
-                </div>
-            </section>            
+            <ContactCTA/>  
         </main>
 
-        <footer className='footer'>
-            <div className='footer__info-container'>
-                <div className='footer__info-container__box'>
-                    <p className='footer__info-container__box--logo'>101logix</p>
-                    
-                    <p className='footer__info-container__box--count'>3932</p>
-                
-                    <p className='footer__info-container__box--info'>+91-9372927506</p>
-                    
-                    <p className='footer__info-container__box--info'>info@101logix.com</p>
-                    
-                    <p className='footer__info-container__box--info'>271- bellasis Rd: mumbai central, mumbai 400 008 india</p>
-            
-                </div>
-                <p className='footer__info-container--copyright'>&copy;  2020 101logix ltd.</p>
-            </div>
-
-            <div className='footer__link'>
-                <nav className='footer__link-nav'>
-                    <ul className="footer__link-nav__list">
-                        <li className='footer__link-nav__item footer__link-nav__item'><Link className='footer__link-nav__link--main' to='/'>Services</Link></li>
-                        <li className='footer__link-nav__item'><Link className='footer__link-nav__link' to='/'>website, portal development</Link></li>
-                        <li className='footer__link-nav__item'><Link className='footer__link-nav__link' to='/'>social media marketing</Link></li>
-                        <li className='footer__link-nav__item'><Link className='footer__link-nav__link' to='/'>ecommerce stores</Link></li>
-                        <li className='footer__link-nav__item'><Link className='footer__link-nav__link' to='/'>Mobile apps development</Link></li>
-                        <li className='footer__link-nav__item'><Link className='footer__link-nav__link' to='/'>software development</Link></li>
-                        <li className='footer__link-nav__item'><Link className='footer__link-nav__link' to='/'>consulting</Link></li>   
-                        <li className='footer__link-nav__item'><Link className='footer__link-nav__link' to='/'>e-learning</Link></li>
-                        <li className='footer__link-nav__item'><Link className='footer__link-nav__link' to='/'>Cto services</Link></li>
-                        <li className='footer__link-nav__item'><Link className='footer__link-nav__link' to='/'>startup mentoring</Link></li>   
-                    </ul>
-                </nav>
-                <nav className='footer__link-nav'>
-                    <ul className="footer__link-nav__list">
-                    <li className='footer__link-nav__item footer__link-nav__item'><Link className='footer__link-nav__link--main' to='/'>Useful Links</Link></li>
-                        <li className='footer__link-nav__item'><Link className='footer__link-nav__link' to='/'>home</Link></li>
-                        <li className='footer__link-nav__item'><Link className='footer__link-nav__link' to='/'>about us</Link></li>
-                        <li className='footer__link-nav__item'><Link className='footer__link-nav__link' to='/'>contact us</Link></li>
-                        <li className='footer__link-nav__item'><Link className='footer__link-nav__link' to='/'>request quote</Link></li>
-                    </ul>
-                </nav>
-
-            </div>
-        </footer>
+       
+            <Footer/>
         </React.Fragment>
     )
 }
