@@ -50,22 +50,22 @@ class ContactForm extends React.Component {
     render() {
         return (
             <form className='form' onSubmit={event => this.onFormSubmit((event))}>
-                <h1>ContactForm</h1>
-                <FormFieldSet htmlFor='name' title='Full Name:'>
-                    <input id='name' name='name' type='text' required onChange={this.handleChange} value={this.state.name}/>
+                <h1 className='heading-secondary u-mar-bot-med'>Contact Us !</h1>
+                <FormFieldSet htmlFor='name' title='Name'>
+                    <input id='name' name='name' type='text' placeholder='e.g. John Doe' required onChange={this.handleChange} value={this.state.name}/>
                 </FormFieldSet>
-                <FormFieldSet htmlFor='email' title='Email:'>
-                    <input id='email' name='email' type='email' required onChange={this.handleChange} value={this.state.email}/>
+                <FormFieldSet htmlFor='email' title='E-mail'>
+                    <input id='email' name='email' type='email' placeholder='e.g. john.doe@gmail.com' required onChange={this.handleChange} value={this.state.email}/>
                 </FormFieldSet>
-                <FormFieldSet htmlFor='email' title='Phone:'>
-                    <input id='phone' name='phone' type='no' required onChange={this.handleChange} value={this.state.phone}/>
+                <FormFieldSet htmlFor='email' title='Phone number'>
+                    <input id='phone' name='phone' type='no' placeholder='e.g. +91 9854545421' required onChange={this.handleChange} value={this.state.phone}/>
                 </FormFieldSet>
-                <FormFieldSet htmlFor='message' title='Message:'>
-                    <textarea id='message' name='message' onChange={this.handleChange} value={this.state.message}/>
+                <FormFieldSet htmlFor='message' title='How can we help you'>
+                    <textarea id='message' name='message' placeholder='Tell us briefly about your idea' onChange={this.handleChange} value={this.state.message}/>
                 </FormFieldSet>
 
-                <div className='form__group'>
-                    <input id='formButton' className='btn' type='submit' placeholder='Submit' />
+                <div className='form-group'>
+                    <input id='formButton' className='form-btn' type='submit' placeholder='Submit' />
                 </div>
             </form>
         )
