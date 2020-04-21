@@ -13,6 +13,7 @@ class EmailForm extends React.Component {
     }
 
     onFormSubmit = (e) => {
+        e.preventDefault()
         let formdata = {
             email: this.state.email,
         }

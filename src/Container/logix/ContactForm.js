@@ -16,6 +16,7 @@ class ContactForm extends React.Component {
     }
 
     onFormSubmit = (e) => {
+        e.preventDefault()
         let formdata = {
             name: this.state.name,
             email: this.state.email,
