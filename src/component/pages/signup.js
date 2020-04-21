@@ -1,12 +1,12 @@
 import React from 'react';
 
 // local import here;
-
+import Header from '../layout/header';
 
 function signup() {
     return(
         <React.Fragment>
-            <h1>signup</h1>
+            <Header title='Signup'/>
         </React.Fragment>
     )
 }

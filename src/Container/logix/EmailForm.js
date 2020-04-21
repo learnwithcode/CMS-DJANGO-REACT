@@ -19,7 +19,7 @@ class EmailForm extends React.Component {
 
 
 
-        axios.post('http://127.0.0.1:8000/logix/api/email/', formdata)
+        axios.post('https://logix101.herokuapp.com/logix/api/email/', formdata)
         .then(response => {
             console.log(response)
             if (response.status === 201 ) {

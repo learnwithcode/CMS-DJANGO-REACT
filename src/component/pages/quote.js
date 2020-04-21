@@ -10,7 +10,7 @@ import QuoteForm from '../../Container/logix/RequestForm';
 function quote() {
     return(
         <React.Fragment>
-            <Header/>
+            <Header title='Request Quote'/>
             <QuoteForm/>
             <ContactCTA/>  
             <Footer/>

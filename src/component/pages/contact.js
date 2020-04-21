@@ -10,7 +10,8 @@ import ContactForm from '../../Container/logix/ContactForm';
 function contact() {
     return(
         <React.Fragment>
-            <Header/>
+            <Header title='Contact Us'/>
+
             <ContactForm/>
             <ContactCTA/>  
             <Footer/>

@@ -27,7 +27,7 @@ class ContactForm extends React.Component {
             return alert('phone must be 10 digits')
         }
 
-        axios.post('http://127.0.0.1:8000/logix/api/contact/', formdata)
+        axios.post('https://logix101.herokuapp.com/logix/api/contact/', formdata)
         .then(response => {
             console.log(response)
             if (response.status === 201 ) {
