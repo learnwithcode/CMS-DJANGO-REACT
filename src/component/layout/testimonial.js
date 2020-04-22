@@ -30,7 +30,7 @@ function testimonials() {
 
                     <div className='section-testimonial__box--2'>
                         <p className='para--grey'>“Why we’ve been working with 101logix since 2013? Because they build a relationship that’s based on trust. Over the years they’ve proven that their delivery is fast and stable. On one hand – they have a high retention rate of people working on our projects and for those who change, they manage the knowledge transfer really well. On the other hand – they can ramp up and provide the skills necessary to get things done. We can trust that Objectivity will always deliver technology that’s secure and maintainable, and that they will use all the knowledge they have to propose the best solution possible. The way they collaborate with us to achieve success is simply unique.”</p>
-                        <h3 className='title-text u-mar-top-lar'>Peter R. Smith</h3> 
+                        <h3 className='title-text u-mar-top-med'>Peter R. Smith</h3> 
                         <h3 className='title-text-grey u-mar-top-small'>Head of application at Edrington</h3>
                         <img src={require('../../static/images/client-logo.png')} alt='Logo' className='section-testimonial--img'/>
                     </div>
