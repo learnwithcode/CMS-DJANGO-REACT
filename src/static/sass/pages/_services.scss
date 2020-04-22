@@ -1,9 +1,21 @@
 .service-layout{
+    
     padding: 6rem 0;
     position: relative;
+    display: flex;
+    justify-content: space-evenly;
 
 
-    &__container{
+   &__container--list {
+
+        &-box {
+            display: flex;
+            flex-direction: column;
+        }
+   } 
+
+    &__container--box{
+        
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -12,7 +24,7 @@
         
     } 
     &__box {
-        width: 40%;
+        width: 100%;
         padding: 4rem 4rem;
         margin: 1rem;
         border-radius: 1rem;

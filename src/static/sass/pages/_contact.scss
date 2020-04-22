@@ -1,0 +1,14 @@
+.contact__container {
+    display: flex;
+    justify-content: space-around;
+    height: 60vh;
+
+    &--address {
+       padding: 10rem 0;     
+    }
+
+    &--form {
+        z-index: 10;
+        margin-top: -50rem;
+    }
+}

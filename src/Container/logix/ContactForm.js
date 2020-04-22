@@ -68,6 +68,8 @@ class ContactForm extends React.Component {
                 <div className='form-group'>
                     <input id='formButton' className='form-btn' type='submit' placeholder='Submit' />
                 </div>
+
+                <h3 className='para--grey u-mar-top-med'>By using this contact form you agree to the Terms and Conditions of this website. Joint data controllers of your personal data are entities from 101logix Capital Group. The main purpose of processing your data is to handle your request or inquiry. To learn more about the processing of your personal data please see appropriate section in our Privacy Policy - 'Contact Form' or 'Client or Counterparty'</h3>
             </form>
         )
     }

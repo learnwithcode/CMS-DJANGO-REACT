@@ -11,7 +11,7 @@ function aboutLayout() {
                             <div className='container__grey-box--left'>
                                 <h3 className='heading-tertiary u-mar-bot-small'>About us</h3>    
                                 <h2 className='heading-secondary u-mar-bot-med'>28 years of growth</h2>
-                                <p className='para--grey'>101logix is a permier IT solutions company pan India. We specialize in building eCommerce stores through Web Portals and Mobile Applications. Digital Marketing and Social Media Integration of the Web Portals is our forte. Our Software Development and Consulting Services is HIGH on QUALITY and backed with 28+ years of solid software development experience. Our new Launches of providing CTO services and Startup Mentoring is a very hot sought after programme.</p>
+                                <p className='para--grey u-mar-bot-lar'>101logix is a permier IT solutions company pan India. We specialize in building eCommerce stores through Web Portals and Mobile Applications. Digital Marketing and Social Media Integration of the Web Portals is our forte. Our Software Development and Consulting Services is HIGH on QUALITY and backed with 28+ years of solid software development experience. Our new Launches of providing CTO services and Startup Mentoring is a very hot sought after programme.</p>
                                 <Button color='btn--blue'>Let's talk</Button>
                             </div>
 

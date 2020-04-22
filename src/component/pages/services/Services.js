@@ -13,9 +13,18 @@ class Services extends React.Component {
             <React.Fragment>
                 <Header title='Services'/>
             <section  className='service-layout'>
+                    <div className='service-layout__container--list'>
+                        <h1 className='heading-secondary u-mar-bot-lar u-center'>Services we offer</h1>
+                        {/* <div className='service-layout__container--list-box'> */}
+                            <h3 className='title-bold-grey u-mar-bot-small'>Ecommerce Store</h3>
+                            <h3 className='title-bold-grey u-mar-bot-small'>Social Media Marketing</h3>
+                            <h3 className='title-bold-grey u-mar-bot-small'>Mobile App Development</h3>
+                            <h3 className='title-bold-grey u-mar-bot-small'>Software Development</h3>
+                        {/* </div> */}
+                        
+                    </div>
             
-            <h1 className='heading-secondary u-mar-bot-lar u-center'>Services we offer</h1>
-                    <div className='service-layout__container'>
+                    <div className='service-layout__container--box'>
 
                         <div className='service-layout__box'>
                             <div className='service-layout__box-container--right'>
@@ -69,7 +78,7 @@ class Services extends React.Component {
                                 <img src={require('../../../static/images/ser1.png')} alt='Logo' className='service-layout__box--1'/>
                             </div>    
                             <div className='service-layout__box-container--left'>
-                                <h3 className='title-text u-mar-bot-small'>Ecommerce stores</h3> 
+                                <h3 className='title-text u-mar-bot-small'>Software Development</h3> 
                                 <h3 className='title-text-grey u-mar-bot-small'>each member of the 101logix team is technically excellent</h3>
                                 <div className='service-layout__box-container--left-services u-mar-bot-small'>
                                     <h3 className='heading-tertiary u-mar-right-small'>one</h3>   

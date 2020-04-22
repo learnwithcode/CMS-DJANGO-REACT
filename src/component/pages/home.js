@@ -61,7 +61,7 @@ function Home() {
             <section  className='section-work'>
                 
                 <h2 className='heading-secondary u-mar-bot-med u-center'>How it works?</h2>
-                <h2 className='para--grey u-center'>we build some of the very best webportals with unmatched dashboard data visualization.</h2>
+                <h2 className='para--grey u-center u-mar-bot-lar'>we build some of the very best webportals with unmatched dashboard data visualization.</h2>
 
                 <div className='section-work__container'>
                     <div className='section-work__box'>

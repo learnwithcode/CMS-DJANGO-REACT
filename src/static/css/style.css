@@ -79,12 +79,26 @@ body {
   color: #5A6576; }
 
 .title-bold-blue {
+  cursor: pointer;
   display: inline-block;
   font-weight: 700;
   font-size: 2.1rem;
   line-height: 2.9rem;
-  text-transform: lowercase;
+  text-transform: capitalize;
   color: #3400A4; }
+
+.title-bold-grey {
+  cursor: pointer;
+  display: block;
+  font-weight: 700;
+  font-size: 2.1rem;
+  line-height: 2.9rem;
+  text-transform: capitalize;
+  color: #5A6576;
+  transition: all .3s; }
+  .title-bold-grey:hover {
+    transform: translatex(1rem);
+    border-bottom: 0.4rem solid #5200FF; }
 
 .para--white {
   font-size: 1.8rem;
@@ -96,9 +110,8 @@ body {
 .para--grey {
   font-weight: 600;
   font-size: 1.4rem;
-  line-height: 2rem;
+  line-height: 2.5rem;
   text-transform: lowercase;
-  margin-bottom: 6rem;
   color: #5A6576; }
 
 .u-center {
@@ -115,6 +128,9 @@ body {
 
 .u-mar-top-lar {
   margin-top: 10rem; }
+
+.u-mar-top-med {
+  margin-top: 4rem; }
 
 .u-mar-top-small {
   margin-top: 2rem; }
@@ -358,6 +374,16 @@ option,
   .nav__link:hover, .nav__link:active {
     color: #FEB409; }
 
+.contact__container {
+  display: flex;
+  justify-content: space-around;
+  height: 60vh; }
+  .contact__container--address {
+    padding: 10rem 0; }
+  .contact__container--form {
+    z-index: 10;
+    margin-top: -50rem; }
+
 .section-industry {
   padding: 6rem 0;
   position: relative; }
@@ -478,15 +504,20 @@ option,
 
 .service-layout {
   padding: 6rem 0;
-  position: relative; }
-  .service-layout__container {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly; }
+  .service-layout__container--list-box {
+    display: flex;
+    flex-direction: column; }
+  .service-layout__container--box {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-wrap: nowrap; }
   .service-layout__box {
-    width: 40%;
+    width: 100%;
     padding: 4rem 4rem;
     margin: 1rem;
     border-radius: 1rem;

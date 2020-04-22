@@ -53,13 +53,31 @@ body {
 }
 
 .title-bold-blue{
+        cursor: pointer;
         display: inline-block;
         font-weight: 700;
         font-size: 2.1rem;
         line-height: 2.9rem;
-        text-transform: lowercase;
+        text-transform: capitalize;
 
         color: #3400A4;
+}
+
+.title-bold-grey{
+    cursor: pointer;
+    display: block;
+    font-weight: 700;
+    font-size: 2.1rem;
+    line-height: 2.9rem;
+    text-transform: capitalize;
+    color: $text-col-grey;
+    
+    transition: all .3s;
+
+    &:hover {
+        transform: translatex(1rem);
+        border-bottom: .4rem solid $color-secondary;
+    }
 }
 
 .para--white{
@@ -75,9 +93,8 @@ body {
 .para--grey {
     font-weight: 600;
     font-size: 1.4rem;
-    line-height: 2rem;
+    line-height: 2.5rem;
     text-transform: lowercase;
 
-    margin-bottom: 6rem;
     color: $text-col-grey;
 }
