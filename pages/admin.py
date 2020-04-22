@@ -10,8 +10,8 @@ class SubServiceInLine(admin.TabularInline):
 
 @admin.register(Service)
 class ServiceAdmin(admin.ModelAdmin):
-    list_display = ['id', 'title'] 
-    list_filter = ['title']
+    list_display = ['id', 'title', 'active'] 
+    list_filter = ['title', 'active']
     search_fields = ['title']
     inlines = [
         SubServiceInLine,

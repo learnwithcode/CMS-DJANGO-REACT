@@ -14,7 +14,8 @@ class ContentBase(models.Model):
 
     image = models.ImageField(null=True, 
                                     blank=True, 
-                                        help_text='Image for the title.')                                         
+                                        help_text='Image for the title.') 
+    active = models.BooleanField(default=True)                                                                            
 
 
     class Meta:
