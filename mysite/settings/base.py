@@ -53,7 +53,8 @@ INSTALLED_APPS = [
     'rest_framework_swagger', # swagger
 
     #local apps
-    'logix101'
+    'logix101',
+    'pages'
     
 ]
 
