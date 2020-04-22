@@ -11,8 +11,12 @@ class Services extends React.Component {
     render() {
         return(
             <React.Fragment>
-                <Header title='Services'/>
-            <section  className='service-layout'>
+                <Header title='From creation to maintenance' 
+                        para='Our digital solutions are future-proof and designed to meet your growth objectives.
+                                 We develop flexible, market-aligned bespoke software applications and offer a range of support and maintenance services.'
+                                 img={require('../../../static/images/service_banner.png')}/>
+
+            <section  className='service-layout u-mar-top-lar'>
                     <div className='service-layout__container--list'>
                         <h1 className='heading-secondary u-mar-bot-lar u-center'>Services we offer</h1>
                         {/* <div className='service-layout__container--list-box'> */}
@@ -38,7 +42,7 @@ class Services extends React.Component {
                                     <h3 className='heading-tertiary u-mar-right-small'>two</h3>  
                                     <h3 className='heading-tertiary u-mar-right-small'>three</h3>  
                                 </div>
-                                <Button color='btn--blue'>Read More</Button>  
+                                <Button color='btn--blue' to={'/services/detail/'}>Read More</Button>  
                             </div>
                         </div>
 
@@ -54,7 +58,7 @@ class Services extends React.Component {
                                     <h3 className='heading-tertiary u-mar-right-small'>one</h3>   
                                     <h3 className='heading-tertiary u-mar-right-small'>two</h3>  
                                 </div>
-                                <Button color='btn--blue'>Read More</Button> 
+                                <Button color='btn--blue' to={'/services/detail/'}>Read More</Button> 
                             </div> 
                         </div>
 
@@ -69,7 +73,7 @@ class Services extends React.Component {
                                 <div className='service-layout__box-container--left-services u-mar-bot-small'>
                                     <h3 className='heading-tertiary u-mar-right-small'>one</h3>   
                                 </div>
-                                <Button color='btn--blue'>Read More</Button>    
+                                <Button color='btn--blue' to={'/services/detail/'}>Read More</Button>    
                             </div>
                         </div>
 
@@ -84,7 +88,7 @@ class Services extends React.Component {
                                     <h3 className='heading-tertiary u-mar-right-small'>one</h3>   
                                     <h3 className='heading-tertiary u-mar-right-small'>two</h3>  
                                 </div>
-                                <Button color='btn--blue'>Read More</Button>  
+                                <Button color='btn--blue' to={'/services/detail/'}>Read More</Button>  
                             </div>
                         </div>
 

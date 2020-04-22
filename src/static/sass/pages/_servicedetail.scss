@@ -1,0 +1,52 @@
+.service-detail{
+    padding: 6rem 0;
+
+    &__container {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: nowrap;
+
+        &--left {
+            flex: 0 0 30%;
+            background-color: white;
+            
+        }
+
+        &--right {
+            flex: 0 0 30%;
+            background-color: white;
+        }
+    }
+}
+
+.sub-service{
+    height: 15rem;
+    padding: 0 25rem;
+    background-color: $color-grey;
+    display: flex;
+    align-items: center;
+
+}
+
+.tag-service {
+    z-index: 10;
+    // background-color: black;
+    margin-top: -6rem;
+    padding: 2rem 2rem;
+    display: flex;
+    justify-content: center;
+
+    &-box {
+        margin-right: 4.8rem;
+        cursor: pointer;
+        padding: 2rem 2rem;
+        background: $color-white;
+        box-shadow: 0rem 1rem 4rem rgba(229, 229, 229, 0.4);
+        border-radius: 1rem; 
+
+        &--highlight{
+            background-color: $color-secondary;
+            color: $color-white;
+        }
+    }
+}
