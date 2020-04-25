@@ -2,7 +2,7 @@ import React from 'react';
 
 
 //local import here
-import Button from '../button';
+import Button from '../ui/button';
 
 import Header from '../layout/header';
 import AboutLayout from '../layout/aboutLayout';

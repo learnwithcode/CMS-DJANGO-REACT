@@ -1,4 +1,5 @@
 import React from 'react';
+import axios from 'axios';
 
 // local import here;
 import Header from '../../layout/header';
@@ -6,25 +7,71 @@ import ContactCTA from '../../layout/contactCTA';
 import Footer from '../../layout/footer';
 
 class ServiceDetail extends React.Component {
+
+    state = {
+        subService: {
+            service : []
+        },
+        selectSubServiceID: null,
+        highlight : null
+    }
+
+    componentDidMount() {
+        const serviceID = this.props.match.params.serviceID
+        console.log(serviceID)
+
+        axios.get(`https://logix101.herokuapp.com/pages/api/service/` + `${serviceID}/`)
+        .then( response => {
+            console.log(response.data);
+            this.setState({subService:response.data})
+        } )      
+
+    }
+
+    onSubSectionClick(id){
+        this.setState({
+                selectSubServiceID:id,
+                highlight: `tag-service-box--highlight`})
+    }
+   
     render() {
+        let subServiceTitle = this.state.subService.service.map(ser => {
+            return (
+            
+                <div className={`tag-service-box ${this.state.highlight}`} key={ser.id} onClick={ () => this.onSubSectionClick(ser.id)}>
+                     <h2 className='title-text'>{ser.title}</h2>
+                </div>
+               
+            ) 
+        
+        })
+
+       
+
+        let subservice = this.state.subService.service.map(ser => {
+            if (this.state.selectSubServiceID === ser.id) {
+                return (
+
+                    <div className='service-detail__container--right' key={ser.id}>
+                        <h2 className='title-text u-mar-bot-med'>{ser.title}</h2>
+                        <p className='para--grey u-mar-bot-lar'>{ser.description}</p>
+                    </div>
+            )
+            }
+
+        })
         return(
             <React.Fragment>
-                    <Header title='Digital & Social Media Marketing' 
-                    para='Our digital solutions are future-proof and designed to meet your growth objectives.
-                    We develop flexible, market-aligned bespoke software applications and offer a range of support and maintenance services.'
+                    <Header title={this.state.subService.title} 
+                    para={this.state.subService.description}
                     img={require('../../../static/images/service_banner.png')}/>
 
                     <section  className='service-detail u-mar-top-lar'>
 
                         <div className='service-detail__container u-mar-top-lar'>
                             <div className='service-detail__container--left'>
-                                <h3 className='heading-tertiary u-mar-bot-small'>Digital & social Media Markeing</h3>    
-                                <h2 className='heading-secondary u-mar-bot-med'>Digital Marketing & Social Media Integration that focuses On Digital Landscape Solutions</h2>
-                                <p className='para--grey u-mar-bot-lar'>Managing multiple marketing channels is always a challenge in the digital marketing world.
-                                                                        We partner with our clients to create a digital command centre that can help respond to their 
-                                                                        on-demand needs, offer a single customer view as well as help simplify the complexity of channels, 
-                                                                        messaging, audience and measurement.</p>
-                                        
+                                <h3 className='heading-tertiary u-mar-bot-small'>{this.state.subService.title}</h3>    
+                                <h2 className='heading-secondary u-mar-bot-med'>{this.state.subService.description}</h2>                
                             </div>
 
                             <div className='service-detail__container--right'>
@@ -38,25 +85,7 @@ class ServiceDetail extends React.Component {
                         </div>
 
                         <div className='tag-service'>
-                            <div className='tag-service-box'>
-                             <h2 className='title-text '>Digital Command Centre</h2>
-                            </div>
-
-                            <div className='tag-service-box'>
-                             <h2 className='title-text '>Online Advertising</h2>
-                            </div>
-
-                            <div className='tag-service-box tag-service-box--highlight'>
-                             <h2 className='title-text '>Social Media Markeing</h2>
-                            </div>
-                            
-                            <div className='tag-service-box'>
-                             <h2 className='title-text '>Email Marketing</h2>
-                            </div>
-
-                            <div className='tag-service-box'>
-                             <h2 className='title-text '>Search Engine Strategy</h2>
-                            </div>
+                             {subServiceTitle}
                         </div>
                         
 
@@ -65,13 +94,7 @@ class ServiceDetail extends React.Component {
                                 <img src={require('../../../static/images/socialmedia.png')} alt='Logo' className='container__grey-box--img'/>         
                             </div>
 
-                            <div className='service-detail__container--right'>
-                                <h2 className='title-text u-mar-bot-med'>Social Media Markeing</h2>
-                                <p className='para--grey u-mar-bot-lar'>Managing multiple marketing channels is always a challenge in the digital marketing world.
-                                                                        We partner with our clients to create a digital command centre that can help respond to their 
-                                                                        on-demand needs, offer a single customer view as well as help simplify the complexity of channels, 
-                                                                        messaging, audience and measurement.</p>
-                            </div>
+                            {subservice}
                         </div>
                         
                     </section>

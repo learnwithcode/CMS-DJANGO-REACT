@@ -35,6 +35,7 @@ urlpatterns = [
     path('accounts/', include('allauth.urls')),
     #logix101
     path('logix/api/', include('logix101.urls', namespace='logix101')),
+    path('pages/api/', include('pages.urls', namespace='pages')),
     #DRF
     path('api-auth/', include('rest_framework.urls')),
     #React urls

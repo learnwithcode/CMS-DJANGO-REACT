@@ -1,7 +1,7 @@
 import React from 'react';
 
 // local import here
-import Button from '../button';
+import Button from '../ui/button';
 
 function contactCTA() {
     return(

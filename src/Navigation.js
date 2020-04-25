@@ -10,7 +10,7 @@ import Quote from './component/pages/quote';
 import Login from './component/pages/login';
 import Signup from './component/pages/signup';
 
-import Service from './component/pages/services/Services';
+import ServiceListView from './Container/logix/ServiceListView'
 import ServiceDetail from './component/pages/services/ServiceDetail';
 
 
@@ -33,14 +33,14 @@ function Navigation() {
 
             <Switch>
                 <Route path="/" exact component={Wrapper(Home)}/> 
-                <Route path="/services/" exact component={Wrapper(Service)}/>  
+                <Route path="/services/" exact component={Wrapper(ServiceListView)}/>  
                 <Route path="/about/" exact component={Wrapper(About)}/> 
                 <Route path="/contact/" exact component={Wrapper(Contact)}/> 
                 <Route path="/quote/" exact component={Wrapper(Quote)}/> 
                 <Route path="/login/" exact component={Wrapper(Login)}/> 
                 <Route path="/signup/" exact component={Wrapper(Signup)}/>
 
-                <Route path="/services/detail/" exact component={Wrapper(ServiceDetail)}/> 
+                <Route path="/services/:serviceID/" exact component={Wrapper(ServiceDetail)}/> 
 
 
             </Switch>
