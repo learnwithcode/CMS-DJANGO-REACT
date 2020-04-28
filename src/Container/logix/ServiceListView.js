@@ -3,6 +3,7 @@ import axios from 'axios';
 import { NavLink } from 'react-router-dom';
 
 // local import here;
+import Button from '../../component/ui/button';
 
 import Header from '../../component/layout/header';
 import ContactCTA from '../../component/layout/contactCTA';
@@ -49,7 +50,9 @@ class ServiceListApiView extends React.Component {
                 <Header title='From creation to maintenance' 
                         para='Our digital solutions are future-proof and designed to meet your growth objectives.
                                  We develop flexible, market-aligned bespoke software applications and offer a range of support and maintenance services.'
-                                 img={require('../../static/images/service_banner.png')}/>
+                                 img={require('../../static/images/service_banner.png')}>
+                <Button color='btn--white' to={'/quote/'}>Let's talk</Button>                     
+                </Header>
                                  
                     <section  className='service-layout u-mar-top-lar'>
                         <div className='service-layout__container--list'>

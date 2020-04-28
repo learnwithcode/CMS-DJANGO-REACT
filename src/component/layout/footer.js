@@ -41,11 +41,11 @@ function footer() {
                     <ul className="footer__link-nav__list">
                     <li className='footer__link-nav__item footer__link-nav__item'><Link className='footer__link-nav__link--main' to='/'>Useful Links</Link></li>
                         <li className='footer__link-nav__item'><Link className='footer__link-nav__link' to='/'>home</Link></li>
-                        <li className='footer__link-nav__item'><Link className='footer__link-nav__link' to='/'>about us</Link></li>
-                        <li className='footer__link-nav__item'><Link className='footer__link-nav__link' to='/'>contact us</Link></li>
-                        <li className='footer__link-nav__item'><Link className='footer__link-nav__link' to='/'>request quote</Link></li>
-                        <li className='footer__link-nav__item'><Link className='footer__link-nav__link' to='/'>Login</Link></li>
-                        <li className='footer__link-nav__item'><Link className='footer__link-nav__link' to='/'>Sign Up</Link></li>
+                        <li className='footer__link-nav__item'><Link className='footer__link-nav__link' to='/about/'>about us</Link></li>
+                        <li className='footer__link-nav__item'><Link className='footer__link-nav__link' to='/contact/'>contact us</Link></li>
+                        <li className='footer__link-nav__item'><Link className='footer__link-nav__link' to='/quote/'>request quote</Link></li>
+                        <li className='footer__link-nav__item'><Link className='footer__link-nav__link' to='/login/'>Login</Link></li>
+                        <li className='footer__link-nav__item'><Link className='footer__link-nav__link' to='/signup/'>Sign Up</Link></li>
                     </ul>
                 </nav>
 

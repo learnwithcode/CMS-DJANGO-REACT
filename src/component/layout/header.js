@@ -9,7 +9,7 @@ function header(props) {
             <div className='header__text-box'>
                 <h1 className='heading-primary u-mar-bot-lar'>{props.title}</h1>
                     <p className='para--white'>{props.para}</p>
-                <Button color='btn--white' to={'/quote/'}>Let's talk</Button>
+                {props.children}
             </div>
             <img src={props.img} className='header__hero'/>
         </header>

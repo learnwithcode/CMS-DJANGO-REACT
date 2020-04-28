@@ -16,7 +16,9 @@ function Home() {
         <React.Fragment>
             <Header title='One stop solution for all your IT needs....' 
                     para='...simplifying business...'
-                    img={require('../../static/images/heroimg.png')}/>
+                    img={require('../../static/images/heroimg.png')}>
+            <Button color='btn--white' to={'/quote/'}>Let's talk</Button>            
+            </Header>
 
         <main>
             <section  className='section-industry'>
