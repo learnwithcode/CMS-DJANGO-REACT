@@ -13,7 +13,7 @@ class ServiceSerializer(serializers.ModelSerializer):
     service = SubServiceSerializer(many=True)
     class Meta:
         model = Service
-        fields = ['id', 'title', 'description', 'service']
+        fields = ['id', 'title', 'slug', 'description', 'service']
 
 
 class ServiceDetailSerializer(serializers.ModelSerializer):

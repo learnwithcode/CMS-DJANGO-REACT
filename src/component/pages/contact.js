@@ -23,6 +23,7 @@ function contact() {
                     <p className='para--grey'>271- Bellasis Rd: Mumbai Central</p>
                     <p className='para--grey'>Mumbai 400 008 India</p>
                     <p className='heading-tertiary u-mar-top-small'>View on map</p>
+                    
                 </div>
                 <div className='contact__container--form'>
                     <ContactForm/>

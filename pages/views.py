@@ -26,3 +26,4 @@ Service Detail api view.
 class ServiceDetailAPIView(RetrieveAPIView):
     queryset = Service.objects.all()
     serializer_class = ServiceDetailSerializer
+    lookup_field = 'slug'

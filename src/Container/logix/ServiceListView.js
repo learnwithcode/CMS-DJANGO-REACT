@@ -29,7 +29,7 @@ class ServiceListApiView extends React.Component {
         let initialState = this.state.services
         let serviceSideNavTitle = initialState.map(ser => {
             return (
-               <NavLink className='nav__link'  to={'/services/' + ser.id + '/'}> 
+               <NavLink className='nav__link'  to={'/services/' + ser.slug + '/'}> 
                     <ServiceSideNav key={ser.id} title={ser.title}/>
                 </NavLink>
             )
@@ -37,7 +37,7 @@ class ServiceListApiView extends React.Component {
 
         let serviceBox = initialState.map(box => {
             return (
-                <ServiceBox  key={box.id} title={box.title} description={box.description} link={'/services/' + box.id + '/'}>
+                <ServiceBox  key={box.id} title={box.title} description={box.description} link={'/services/' + box.slug + '/'}>
                     {box.service.map(ser => {
                        return <h3 className='heading-tertiary u-mar-right-small' key={ser.id}> {ser.title}</h3> 
                     })}      

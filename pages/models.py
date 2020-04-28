@@ -1,4 +1,5 @@
 from django.db import models
+from django.template.defaultfilters import slugify
 
 # Create your models here.
 
@@ -23,9 +24,12 @@ class ContentBase(models.Model):
 
 
 class Service(ContentBase):
-    pass
+    slug = models.SlugField(max_length=60, null=True, blank=True, help_text='Leave it blank')
 
 
+    def save(self, *args, **kwargs):
+        self.slug = slugify(self.title)
+        super(Service, self).save(*args, **kwargs)
 
 class SubService(ContentBase):
     service = models.ForeignKey(Service, 

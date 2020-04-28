@@ -13,6 +13,7 @@ class ServiceAdmin(admin.ModelAdmin):
     list_display = ['id', 'title', 'active'] 
     list_filter = ['title', 'active']
     search_fields = ['title']
+    readonly_fields = ['slug']
     inlines = [
         SubServiceInLine,
     ]
