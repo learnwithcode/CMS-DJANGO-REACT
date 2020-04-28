@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 // local import here
+import FooterMenuList from '../../Container/logix/FooterMenuList';
 
 function footer() {
     return(
@@ -23,20 +24,7 @@ function footer() {
             </div>
 
             <div className='footer__link'>
-                <nav className='footer__link-nav'>
-                    <ul className="footer__link-nav__list">
-                        <li className='footer__link-nav__item footer__link-nav__item'><Link className='footer__link-nav__link--main' to='/'>Services</Link></li>
-                        <li className='footer__link-nav__item'><Link className='footer__link-nav__link' to='/'>website, portal development</Link></li>
-                        <li className='footer__link-nav__item'><Link className='footer__link-nav__link' to='/'>social media marketing</Link></li>
-                        <li className='footer__link-nav__item'><Link className='footer__link-nav__link' to='/'>ecommerce stores</Link></li>
-                        <li className='footer__link-nav__item'><Link className='footer__link-nav__link' to='/'>Mobile apps development</Link></li>
-                        <li className='footer__link-nav__item'><Link className='footer__link-nav__link' to='/'>software development</Link></li>
-                        <li className='footer__link-nav__item'><Link className='footer__link-nav__link' to='/'>consulting</Link></li>   
-                        <li className='footer__link-nav__item'><Link className='footer__link-nav__link' to='/'>e-learning</Link></li>
-                        <li className='footer__link-nav__item'><Link className='footer__link-nav__link' to='/'>Cto services</Link></li>
-                        <li className='footer__link-nav__item'><Link className='footer__link-nav__link' to='/'>startup mentoring</Link></li>   
-                    </ul>
-                </nav>
+                <FooterMenuList/>
                 <nav className='footer__link-nav'>
                     <ul className="footer__link-nav__list">
                     <li className='footer__link-nav__item footer__link-nav__item'><Link className='footer__link-nav__link--main' to='/'>Useful Links</Link></li>

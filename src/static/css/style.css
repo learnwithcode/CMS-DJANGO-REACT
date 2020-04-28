@@ -61,7 +61,7 @@ body {
   font-weight: 600;
   font-size: 1.4rem;
   line-height: 2rem;
-  color: #313C54; }
+  color: #3F00C7; }
 
 .title-text {
   font-weight: 600;
@@ -85,7 +85,7 @@ body {
   font-size: 2.1rem;
   line-height: 2.9rem;
   text-transform: capitalize;
-  color: #313C54; }
+  color: #3F00C7; }
 
 .title-bold-grey {
   cursor: pointer;
@@ -98,7 +98,7 @@ body {
   transition: all .3s; }
   .title-bold-grey:hover {
     transform: translatex(1rem);
-    border-bottom: 0.4rem solid #313C54; }
+    border-bottom: 0.4rem solid #5200FF; }
 
 .para--white {
   font-size: 1.8rem;
@@ -157,18 +157,18 @@ body {
 
 .btn--white {
   background: #ffffff;
-  color: #000000; }
+  color: #3F00C9; }
 
 .btn--blue {
   margin-top: -5rem;
-  background: #000000;
+  background: #3F00C9;
   color: #ffffff; }
 
 .btn-arrow {
   position: relative;
   left: 1.3rem;
   padding: .7rem 2rem;
-  background: #313C54;
+  background: #5200FF;
   border-radius: 3.8rem;
   color: #ffffff; }
 
@@ -249,7 +249,7 @@ option,
 .footer {
   margin-top: -12rem;
   height: 75vh;
-  background-color: #313C54;
+  background-color: #5200FF;
   position: relative;
   display: flex;
   border-bottom: 0.5px solid #FFFFFF; }
@@ -536,7 +536,7 @@ option,
     box-shadow: 0rem 1rem 4rem rgba(229, 229, 229, 0.4);
     border-radius: 1rem; }
     .tag-service-box--highlight {
-      background-color: #313C54;
+      background-color: #5200FF;
       color: #ffffff; }
 
 .service-layout {

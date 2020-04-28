@@ -1,7 +1,7 @@
 import React from 'react';
 
 // local import here
-import Button from '../ui/button';
+
 
 function header(props) {
     return (

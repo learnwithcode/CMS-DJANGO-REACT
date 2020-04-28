@@ -27,14 +27,14 @@ export default WrappedComponent => {
     
         timer = () => this.setState({ isLoading: false}, () => this.clearTimer());
     
-        setTimer = () => (this.timeout = setTimeout(this.timer, 700))
+        setTimer = () => (this.timeout = setTimeout(this.timer, 1000))
         
         render = () => (
             <div>
             {this.state.isLoading
             ?<div style={style}>
                
-                <h2>Spinner</h2>   
+               <div class="dot-spin"></div> 
             </div>
             : <WrappedComponent {...this.props} />}
             </div>

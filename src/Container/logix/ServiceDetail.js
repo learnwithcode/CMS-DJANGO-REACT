@@ -2,6 +2,8 @@ import React from 'react';
 import axios from 'axios';
 
 // local import here;
+import Button from '../../component/ui/button';
+
 import Header from '../../component/layout/header';
 import ContactCTA from '../../component/layout/contactCTA';
 import Footer from '../../component/layout/footer';
@@ -68,7 +70,9 @@ class ServiceDetail extends React.Component {
             <React.Fragment>
                     <Header title={this.state.subService.title} 
                     para={this.state.subService.description}
-                    img={require('../../static/images/service_banner.png')}/>
+                    img={require('../../static/images/service_banner.png')}>
+                        <Button color='btn--white' to={'/quote/'}>Let's talk</Button> 
+                    </Header>
 
                     <section  className='service-detail u-mar-top-lar'>
 
