@@ -23,7 +23,7 @@ function Home() {
                 
                 <div className='section-industry__heading-box'>
                     <h2 className='heading-secondary u-mar-bot-med'>Services Industries</h2>
-                    <Button color='btn--blue'>See all Services</Button>
+                    <Button color='btn--blue' to={'/services/'}>See all Services</Button>
                 </div> 
 
                 <div className='section-industry__container'>

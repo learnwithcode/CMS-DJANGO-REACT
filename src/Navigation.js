@@ -11,7 +11,7 @@ import Login from './component/pages/login';
 import Signup from './component/pages/signup';
 
 import ServiceListView from './Container/logix/ServiceListView'
-import ServiceDetail from './component/pages/services/ServiceDetail';
+import ServiceDetail from './Container/logix/ServiceDetail';
 
 
 function Navigation() {

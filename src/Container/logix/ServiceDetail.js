@@ -2,9 +2,9 @@ import React from 'react';
 import axios from 'axios';
 
 // local import here;
-import Header from '../../layout/header';
-import ContactCTA from '../../layout/contactCTA';
-import Footer from '../../layout/footer';
+import Header from '../../component/layout/header';
+import ContactCTA from '../../component/layout/contactCTA';
+import Footer from '../../component/layout/footer';
 
 class ServiceDetail extends React.Component {
 
@@ -53,7 +53,7 @@ class ServiceDetail extends React.Component {
                 return (
                     <React.Fragment>
                         <div className='service-detail__container--left'>
-                            <img src={require('../../../static/images/socialmedia.png')} alt='Logo' className='container__grey-box--img'/>         
+                            <img src={require('../../static/images/socialmedia.png')} alt='Logo' className='container__grey-box--img'/>         
                         </div>
                         <div className='service-detail__container--right' key={ser.id}>
                             <h2 className='title-text u-mar-bot-med'>{ser.title}</h2>
@@ -68,7 +68,7 @@ class ServiceDetail extends React.Component {
             <React.Fragment>
                     <Header title={this.state.subService.title} 
                     para={this.state.subService.description}
-                    img={require('../../../static/images/service_banner.png')}/>
+                    img={require('../../static/images/service_banner.png')}/>
 
                     <section  className='service-detail u-mar-top-lar'>
 
@@ -79,7 +79,7 @@ class ServiceDetail extends React.Component {
                             </div>
 
                             <div className='service-detail__container--right'>
-                            <img src={require('../../../static/images/digisocial.png')} alt='Logo' className='container__grey-box--img'/>
+                            <img src={require('../../static/images/digisocial.png')} alt='Logo' className='container__grey-box--img'/>
                             </div>
                         </div>
 

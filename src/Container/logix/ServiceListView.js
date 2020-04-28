@@ -28,7 +28,9 @@ class ServiceListApiView extends React.Component {
         let initialState = this.state.services
         let serviceSideNavTitle = initialState.map(ser => {
             return (
-               <NavLink className='nav__link'  to={'/services/' + ser.id + '/'}> <ServiceSideNav key={ser.id} title={ser.title}/></NavLink>
+               <NavLink className='nav__link'  to={'/services/' + ser.id + '/'}> 
+                    <ServiceSideNav key={ser.id} title={ser.title}/>
+                </NavLink>
             )
         })
 
