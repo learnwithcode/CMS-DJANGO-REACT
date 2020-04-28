@@ -38,7 +38,7 @@ class ServiceDetail extends React.Component {
         let subServiceTitle = this.state.subService.service.map(ser => {
             return (
             
-                <div className={`tag-service-box ${this.state.highlight}`} key={ser.id} onClick={ () => this.onSubSectionClick(ser.id)}>
+                <div className={`tag-service-box ${`${this.state.selectSubServiceID === ser.id ? this.state.highlight :null}`}`} key={ser.id} onClick={ () => this.onSubSectionClick(ser.id)}>
                      <h2 className='title-text'>{ser.title}</h2>
                 </div>
                
@@ -51,11 +51,15 @@ class ServiceDetail extends React.Component {
         let subservice = this.state.subService.service.map(ser => {
             if (this.state.selectSubServiceID === ser.id) {
                 return (
-
-                    <div className='service-detail__container--right' key={ser.id}>
-                        <h2 className='title-text u-mar-bot-med'>{ser.title}</h2>
-                        <p className='para--grey u-mar-bot-lar'>{ser.description}</p>
-                    </div>
+                    <React.Fragment>
+                        <div className='service-detail__container--left'>
+                            <img src={require('../../../static/images/socialmedia.png')} alt='Logo' className='container__grey-box--img'/>         
+                        </div>
+                        <div className='service-detail__container--right' key={ser.id}>
+                            <h2 className='title-text u-mar-bot-med'>{ser.title}</h2>
+                            <p className='para--grey u-mar-bot-lar'>{ser.description}</p>
+                        </div>
+                    </React.Fragment>
             )
             }
 
@@ -90,10 +94,6 @@ class ServiceDetail extends React.Component {
                         
 
                         <div className='service-detail__container u-mar-top-lar'>
-                            <div className='service-detail__container--left'>
-                                <img src={require('../../../static/images/socialmedia.png')} alt='Logo' className='container__grey-box--img'/>         
-                            </div>
-
                             {subservice}
                         </div>
                         

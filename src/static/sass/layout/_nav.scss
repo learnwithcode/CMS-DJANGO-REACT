@@ -42,7 +42,8 @@
         }
 
         &:hover,
-        &:active {
+        &:active,
+        &.active {
             color: $color-tertiary;
         }
     }

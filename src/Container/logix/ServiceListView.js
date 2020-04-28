@@ -1,6 +1,6 @@
 import React from 'react';
 import axios from 'axios';
-
+import { NavLink } from 'react-router-dom';
 
 // local import here;
 
@@ -28,7 +28,7 @@ class ServiceListApiView extends React.Component {
         let initialState = this.state.services
         let serviceSideNavTitle = initialState.map(ser => {
             return (
-                <ServiceSideNav key={ser.id} title={ser.title}/>
+               <NavLink className='nav__link'  to={'/services/' + ser.id + '/'}> <ServiceSideNav key={ser.id} title={ser.title}/></NavLink>
             )
         })
 

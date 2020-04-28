@@ -371,7 +371,7 @@ option,
     line-height: 2.2rem;
     text-transform: capitalize;
     transition: all .2s; }
-  .nav__link:hover, .nav__link:active {
+  .nav__link:hover, .nav__link:active, .nav__link.active {
     color: #FEB409; }
 
 .contact__container {

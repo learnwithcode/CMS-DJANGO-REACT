@@ -1,5 +1,5 @@
 import React from 'react';
-import { Switch, Route, Link } from 'react-router-dom';
+import { Switch, Route, NavLink } from 'react-router-dom';
 import Wrapper from './Container/HOC/Wrapper';
 
 //local import here;
@@ -21,14 +21,14 @@ function Navigation() {
                 <nav className='nav'>
                     <img src={require('./static/images/logo.svg')} alt='Logo' className='logo'/>
                         <ul className="nav__list">
-                            <li className='nav__item'><Link className='nav__link' to='/'>home</Link></li>
-                            <li className='nav__item'><Link className='nav__link' to='/services/'>services</Link></li>
-                            <li className='nav__item'><Link className='nav__link' to='/about/'>about us</Link></li>
-                            <li className='nav__item'><Link className='nav__link' to='/contact/'>contact us</Link></li>
-                            <li className='nav__item'><Link className='nav__link' to='/quote/'>request quote</Link></li>
-                            <li className='nav__item'><Link className='nav__link' to='/login/'>login</Link></li>   
+                            <li className='nav__item'><NavLink className='nav__link' to='/' exact>home</NavLink></li>
+                            <li className='nav__item'><NavLink className='nav__link' to='/services/'>services</NavLink></li>
+                            <li className='nav__item'><NavLink className='nav__link' to='/about/'>about us</NavLink></li>
+                            <li className='nav__item'><NavLink className='nav__link' to='/contact/'>contact us</NavLink></li>
+                            <li className='nav__item'><NavLink className='nav__link' to='/quote/'>request quote</NavLink></li>
+                            <li className='nav__item'><NavLink className='nav__link' to='/login/'>login</NavLink></li>   
                         </ul>
-                        <li className='nav__item nav__item--btn'><Link className='nav__link' to='/signup/'>Get  Started</Link></li>
+                        <li className='nav__item nav__item--btn'><NavLink className='nav__link' to='/signup/'>Get  Started</NavLink></li>
                 </nav>
 
             <Switch>
