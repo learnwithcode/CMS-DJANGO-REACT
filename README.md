@@ -1,1 +1,1 @@
-# 101Logix
+# Complete Django - React Cms
